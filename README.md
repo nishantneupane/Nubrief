@@ -6,11 +6,11 @@ Instead of relying on human writers to summarize news, we built NuBrief, an enti
 
 **✨ Features**
 
-✅ News Personalization – Users can subscribe to news categories like Tech, Business, Sports, Politics, and more.
-✅ AI-Powered Summaries – Uses Google Gemini AI to generate concise news summaries.
-✅ Smalltalk Wisdom Generator – Daily wisdom quotes & trivia, implemented in Smalltalk and embedded in emails.
-✅ Fully Hosted – The backend is deployed on Render, and the frontend is live at www.nubrief.co.
-✅ Unsubscribe & Preferences – Users can manage subscriptions and change preferences anytime.
+✅ News Personalization – Users can subscribe to news categories like Tech, Business, Sports, Politics, and more.  
+✅ AI-Powered Summaries – Uses Google Gemini AI to generate concise news summaries.  
+✅ Smalltalk Wisdom Generator – Daily wisdom quotes & trivia, implemented in Smalltalk and embedded in emails.  
+✅ Fully Hosted – The backend is deployed on Render, and the frontend is live at www.nubrief.co.  
+✅ Unsubscribe & Preferences – Users can manage subscriptions and change preferences anytime.  
 
 **🛠 Tech Stack**
     •   Frontend: Next.js, React
