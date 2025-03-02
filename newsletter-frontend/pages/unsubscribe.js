@@ -1,10 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 
 export default function UnsubscribePage() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [loading, setLoading] = useState(false);
+
+    // 🔥 Ensure no white borders appear
+    useEffect(() => {
+        document.body.style.margin = "0";
+        document.body.style.padding = "0";
+        document.documentElement.style.margin = "0";
+        document.documentElement.style.padding = "0";
+        document.body.style.overflow = "hidden";
+        document.documentElement.style.overflow = "hidden";
+        document.body.style.width = "100vw";
+        document.body.style.height = "100vh";
+    }, []);
 
     const handleUnsubscribe = async (e) => {
         e.preventDefault();
@@ -40,7 +52,7 @@ export default function UnsubscribePage() {
         }
     };
 
-    const validateEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    const validateEmail = (email) => /^[^\s@]+@[^\s@]+$/.test(email);
 
     return (
         <div style={styles.container}>
@@ -81,6 +93,7 @@ export default function UnsubscribePage() {
 
 const styles = {
     container: {
+        position: "absolute",
         margin: "0",
         padding: "0",
         width: "100vw",
@@ -90,6 +103,7 @@ const styles = {
         justifyContent: "center",
         background: "linear-gradient(135deg, #1e3c72, #2a5298, #005aa7)",
         fontFamily: "'Poppins', sans-serif",
+        boxSizing: "border-box", // ✅ Ensures content fits without overflow
     },
     unsubscribeBox: {
         width: "100%",
@@ -135,7 +149,7 @@ const styles = {
         fontSize: "16px",
         borderRadius: "8px",
         border: "none",
-        backgroundColor: "rgba(255, 255, 255, 0.9)",
+        backgroundColor: "rgba(209, 206, 206, 0.9)",
         textAlign: "center",
         transition: "0.3s ease-in-out",
     },
@@ -150,9 +164,6 @@ const styles = {
         cursor: "pointer",
         transition: "0.3s ease-in-out",
         minWidth: "120px",
-    },
-    buttonHover: {
-        backgroundColor: "#c9302c",
     },
     message: {
         marginTop: "15px",

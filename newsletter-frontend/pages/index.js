@@ -116,23 +116,31 @@ export default function LandingPage() {
 
 // 🎨 **Final Aesthetic Styles**
 const styles = {
-    container: {
+    globalReset: {
         margin: "0",
         padding: "0",
         width: "100vw",
         height: "100vh",
+        overflowX: "hidden",
+    },
+    container: {
+        position: "absolute",  // Ensures it takes the entire screen
+        top: "0",
+        left: "0",
+        width: "100%",
+        height: "100%",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         flexDirection: "column",
-        background: "linear-gradient(135deg, #1e3c72, #2a5298, #005aa7)",
+        background: "linear-gradient(135deg, rgb(12, 33, 71), #2a5298, rgb(28, 109, 181))",
         fontFamily: "'Poppins', sans-serif",
     },
     header: {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        marginBottom: "15px",
+        marginBottom: "10px",
     },
     title: {
         fontSize: "36px",
@@ -170,7 +178,7 @@ const styles = {
         border: "none",
         borderRadius: "8px",
         fontSize: "16px",
-        backgroundColor: "rgba(255, 255, 255, 0.9)",
+        backgroundColor: "rgba(195, 192, 192, 0.9)",
         textAlign: "center",
     },
     checkboxContainer: {
@@ -223,7 +231,7 @@ const styles = {
         animation: "fadeOut 3s ease-in-out",
     },
     footer: {
-        marginTop: "20px",
+        marginTop: "10px",
     },
     unsubscribeLink: {
         color: "#ffb400",
