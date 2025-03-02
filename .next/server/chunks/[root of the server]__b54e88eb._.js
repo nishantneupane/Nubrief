@@ -1,68 +1,71 @@
 module.exports = {
 
-"[externals]/next/dist/compiled/next-server/pages-api.runtime.dev.js [external] (next/dist/compiled/next-server/pages-api.runtime.dev.js, cjs)": (function(__turbopack_context__) {
+    "[externals]/next/dist/compiled/next-server/pages-api.runtime.dev.js [external] (next/dist/compiled/next-server/pages-api.runtime.dev.js, cjs)": (function (__turbopack_context__) {
 
-var { g: global, d: __dirname, m: module, e: exports } = __turbopack_context__;
-{
-const mod = __turbopack_context__.x("next/dist/compiled/next-server/pages-api.runtime.dev.js", () => require("next/dist/compiled/next-server/pages-api.runtime.dev.js"));
+        var { g: global, d: __dirname, m: module, e: exports } = __turbopack_context__;
+        {
+            const mod = __turbopack_context__.x("next/dist/compiled/next-server/pages-api.runtime.dev.js", () => require("next/dist/compiled/next-server/pages-api.runtime.dev.js"));
 
-module.exports = mod;
-}}),
-"[project]/pages/api/subscribe.js [api] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
+            module.exports = mod;
+        }
+    }),
+    "[project]/pages/api/subscribe.js [api] (ecmascript)": ((__turbopack_context__) => {
+        "use strict";
 
-var { g: global, d: __dirname } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>handler)
-});
-async function handler(req, res) {
-    if (req.method !== "POST") {
-        return res.status(405).json({
-            error: "Method Not Allowed"
-        });
-    }
-    try {
-        const response = await fetch("http://localhost:4000/api/subscribe", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(req.body)
-        });
-        const data = await response.json();
-        return res.status(response.status).json(data);
-    } catch (error) {
-        console.error("Error subscribing user:", error);
-        return res.status(500).json({
-            error: "Internal server error"
-        });
-    }
-}
-}}),
-"[project]/node_modules/next/dist/esm/server/route-modules/pages-api/module.compiled.js [api] (ecmascript)": (function(__turbopack_context__) {
+        var { g: global, d: __dirname } = __turbopack_context__;
+        {
+            __turbopack_context__.s({
+                "default": (() => handler)
+            });
+            async function handler(req, res) {
+                if (req.method !== "POST") {
+                    return res.status(405).json({
+                        error: "Method Not Allowed"
+                    });
+                }
+                try {
+                    const response = await fetch("https://newsletter-backend-sg7g.onrender.com/api/subscribe", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify(req.body)
+                    });
+                    const data = await response.json();
+                    return res.status(response.status).json(data);
+                } catch (error) {
+                    console.error("Error subscribing user:", error);
+                    return res.status(500).json({
+                        error: "Internal server error"
+                    });
+                }
+            }
+        }
+    }),
+    "[project]/node_modules/next/dist/esm/server/route-modules/pages-api/module.compiled.js [api] (ecmascript)": (function (__turbopack_context__) {
 
-var { g: global, d: __dirname, m: module, e: exports } = __turbopack_context__;
-{
-if ("TURBOPACK compile-time falsy", 0) {
-    "TURBOPACK unreachable";
-} else {
-    if ("TURBOPACK compile-time truthy", 1) {
-        module.exports = __turbopack_context__.r("[externals]/next/dist/compiled/next-server/pages-api.runtime.dev.js [external] (next/dist/compiled/next-server/pages-api.runtime.dev.js, cjs)");
-    } else {
-        "TURBOPACK unreachable";
-    }
-} //# sourceMappingURL=module.compiled.js.map
-}}),
-"[project]/node_modules/next/dist/esm/server/route-kind.js [api] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
+        var { g: global, d: __dirname, m: module, e: exports } = __turbopack_context__;
+        {
+            if ("TURBOPACK compile-time falsy", 0) {
+                "TURBOPACK unreachable";
+            } else {
+                if ("TURBOPACK compile-time truthy", 1) {
+                    module.exports = __turbopack_context__.r("[externals]/next/dist/compiled/next-server/pages-api.runtime.dev.js [external] (next/dist/compiled/next-server/pages-api.runtime.dev.js, cjs)");
+                } else {
+                    "TURBOPACK unreachable";
+                }
+            } //# sourceMappingURL=module.compiled.js.map
+        }
+    }),
+    "[project]/node_modules/next/dist/esm/server/route-kind.js [api] (ecmascript)": ((__turbopack_context__) => {
+        "use strict";
 
-var { g: global, d: __dirname } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "RouteKind": (()=>RouteKind)
-});
-var RouteKind = /*#__PURE__*/ function(RouteKind) {
+        var { g: global, d: __dirname } = __turbopack_context__;
+        {
+            __turbopack_context__.s({
+                "RouteKind": (() => RouteKind)
+            });
+            var RouteKind = /*#__PURE__*/ function (RouteKind) {
     /**
    * `PAGES` represents all the React pages that are under `pages/`.
    */ RouteKind["PAGES"] = "PAGES";
@@ -80,14 +83,15 @@ var RouteKind = /*#__PURE__*/ function(RouteKind) {
     /**
    * `IMAGE` represents all the images that are generated by `next/image`.
    */ RouteKind["IMAGE"] = "IMAGE";
-    return RouteKind;
-}({}); //# sourceMappingURL=route-kind.js.map
-}}),
-"[project]/node_modules/next/dist/esm/build/templates/helpers.js [api] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
+                return RouteKind;
+            }({}); //# sourceMappingURL=route-kind.js.map
+        }
+    }),
+    "[project]/node_modules/next/dist/esm/build/templates/helpers.js [api] (ecmascript)": ((__turbopack_context__) => {
+        "use strict";
 
-var { g: global, d: __dirname } = __turbopack_context__;
-{
+        var { g: global, d: __dirname } = __turbopack_context__;
+        {
 /**
  * Hoists a name from a module or promised module.
  *
@@ -95,60 +99,62 @@ var { g: global, d: __dirname } = __turbopack_context__;
  * @param name the name to hoist
  * @returns the value on the module (or promised module)
  */ __turbopack_context__.s({
-    "hoist": (()=>hoist)
-});
-function hoist(module, name) {
-    // If the name is available in the module, return it.
-    if (name in module) {
-        return module[name];
-    }
-    // If a property called `then` exists, assume it's a promise and
-    // return a promise that resolves to the name.
-    if ('then' in module && typeof module.then === 'function') {
-        return module.then((mod)=>hoist(mod, name));
-    }
-    // If we're trying to hoise the default export, and the module is a function,
-    // return the module itself.
-    if (typeof module === 'function' && name === 'default') {
-        return module;
-    }
-    // Otherwise, return undefined.
-    return undefined;
-} //# sourceMappingURL=helpers.js.map
-}}),
-"[project]/node_modules/next/dist/esm/build/templates/pages-api.js { INNER_PAGE => \"[project]/pages/api/subscribe.js [api] (ecmascript)\" } [api] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
+            "hoist": (() => hoist)
+        });
+            function hoist(module, name) {
+                // If the name is available in the module, return it.
+                if (name in module) {
+                    return module[name];
+                }
+                // If a property called `then` exists, assume it's a promise and
+                // return a promise that resolves to the name.
+                if ('then' in module && typeof module.then === 'function') {
+                    return module.then((mod) => hoist(mod, name));
+                }
+                // If we're trying to hoise the default export, and the module is a function,
+                // return the module itself.
+                if (typeof module === 'function' && name === 'default') {
+                    return module;
+                }
+                // Otherwise, return undefined.
+                return undefined;
+            } //# sourceMappingURL=helpers.js.map
+        }
+    }),
+    "[project]/node_modules/next/dist/esm/build/templates/pages-api.js { INNER_PAGE => \"[project]/pages/api/subscribe.js [api] (ecmascript)\" } [api] (ecmascript)": ((__turbopack_context__) => {
+        "use strict";
 
-var { g: global, d: __dirname } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "config": (()=>config),
-    "default": (()=>__TURBOPACK__default__export__),
-    "routeModule": (()=>routeModule)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$route$2d$modules$2f$pages$2d$api$2f$module$2e$compiled$2e$js__$5b$api$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/esm/server/route-modules/pages-api/module.compiled.js [api] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$route$2d$kind$2e$js__$5b$api$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/esm/server/route-kind.js [api] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$build$2f$templates$2f$helpers$2e$js__$5b$api$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/esm/build/templates/helpers.js [api] (ecmascript)");
-// Import the userland code.
-var __TURBOPACK__imported__module__$5b$project$5d2f$pages$2f$api$2f$subscribe$2e$js__$5b$api$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/pages/api/subscribe.js [api] (ecmascript)");
-;
-;
-;
-;
-const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$build$2f$templates$2f$helpers$2e$js__$5b$api$5d$__$28$ecmascript$29$__["hoist"])(__TURBOPACK__imported__module__$5b$project$5d2f$pages$2f$api$2f$subscribe$2e$js__$5b$api$5d$__$28$ecmascript$29$__, 'default');
-const config = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$build$2f$templates$2f$helpers$2e$js__$5b$api$5d$__$28$ecmascript$29$__["hoist"])(__TURBOPACK__imported__module__$5b$project$5d2f$pages$2f$api$2f$subscribe$2e$js__$5b$api$5d$__$28$ecmascript$29$__, 'config');
-const routeModule = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$route$2d$modules$2f$pages$2d$api$2f$module$2e$compiled$2e$js__$5b$api$5d$__$28$ecmascript$29$__["PagesAPIRouteModule"]({
-    definition: {
-        kind: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$route$2d$kind$2e$js__$5b$api$5d$__$28$ecmascript$29$__["RouteKind"].PAGES_API,
-        page: "/api/subscribe",
-        pathname: "/api/subscribe",
-        // The following aren't used in production.
-        bundlePath: '',
-        filename: ''
-    },
-    userland: __TURBOPACK__imported__module__$5b$project$5d2f$pages$2f$api$2f$subscribe$2e$js__$5b$api$5d$__$28$ecmascript$29$__
-}); //# sourceMappingURL=pages-api.js.map
-}}),
+        var { g: global, d: __dirname } = __turbopack_context__;
+        {
+            __turbopack_context__.s({
+                "config": (() => config),
+                "default": (() => __TURBOPACK__default__export__),
+                "routeModule": (() => routeModule)
+            });
+            var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$route$2d$modules$2f$pages$2d$api$2f$module$2e$compiled$2e$js__$5b$api$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/esm/server/route-modules/pages-api/module.compiled.js [api] (ecmascript)");
+            var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$route$2d$kind$2e$js__$5b$api$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/esm/server/route-kind.js [api] (ecmascript)");
+            var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$build$2f$templates$2f$helpers$2e$js__$5b$api$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/esm/build/templates/helpers.js [api] (ecmascript)");
+            // Import the userland code.
+            var __TURBOPACK__imported__module__$5b$project$5d2f$pages$2f$api$2f$subscribe$2e$js__$5b$api$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/pages/api/subscribe.js [api] (ecmascript)");
+            ;
+            ;
+            ;
+            ;
+            const __TURBOPACK__default__export__ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$build$2f$templates$2f$helpers$2e$js__$5b$api$5d$__$28$ecmascript$29$__["hoist"])(__TURBOPACK__imported__module__$5b$project$5d2f$pages$2f$api$2f$subscribe$2e$js__$5b$api$5d$__$28$ecmascript$29$__, 'default');
+            const config = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$build$2f$templates$2f$helpers$2e$js__$5b$api$5d$__$28$ecmascript$29$__["hoist"])(__TURBOPACK__imported__module__$5b$project$5d2f$pages$2f$api$2f$subscribe$2e$js__$5b$api$5d$__$28$ecmascript$29$__, 'config');
+            const routeModule = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$route$2d$modules$2f$pages$2d$api$2f$module$2e$compiled$2e$js__$5b$api$5d$__$28$ecmascript$29$__["PagesAPIRouteModule"]({
+                definition: {
+                    kind: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$server$2f$route$2d$kind$2e$js__$5b$api$5d$__$28$ecmascript$29$__["RouteKind"].PAGES_API,
+                    page: "/api/subscribe",
+                    pathname: "/api/subscribe",
+                    // The following aren't used in production.
+                    bundlePath: '',
+                    filename: ''
+                },
+                userland: __TURBOPACK__imported__module__$5b$project$5d2f$pages$2f$api$2f$subscribe$2e$js__$5b$api$5d$__$28$ecmascript$29$__
+            }); //# sourceMappingURL=pages-api.js.map
+        }
+    }),
 
 };
 
