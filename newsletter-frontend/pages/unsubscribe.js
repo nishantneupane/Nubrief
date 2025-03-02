@@ -30,7 +30,7 @@ export default function UnsubscribePage() {
         }
 
         try {
-            const response = await fetch("/api/unsubscribe", {
+            const response = await fetch("https://newsletter-backend-sg7g.onrender.com/api/unsubscribe", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ email }),
