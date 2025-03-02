@@ -28,7 +28,7 @@ export default function LandingPage() {
             return;
         }
 
-        const response = await fetch("/api/subscribe", {
+        const response = await fetch("https://newsletter-backend-sg7g.onrender.com/api/subscribe", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email, categories, frequency }),
