@@ -8,6 +8,8 @@ app.use(express.json());
 app.use(cors());
 
 const userRoutes = require("./routes/user");
+const emailRoutes = require("./routes/email");
+app.use("/api/email", emailRoutes);
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("✅ MongoDB Connected"))
