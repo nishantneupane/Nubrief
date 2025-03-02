@@ -4,7 +4,7 @@ Instead of relying on human writers to summarize news, we built NuBrief, an enti
 
 🚀 Live Deployment: www.nubrief.co
 
-✨ Features
+**✨ Features**
 
 ✅ News Personalization – Users can subscribe to news categories like Tech, Business, Sports, Politics, and more.
 ✅ AI-Powered Summaries – Uses Google Gemini AI to generate concise news summaries.
@@ -12,7 +12,7 @@ Instead of relying on human writers to summarize news, we built NuBrief, an enti
 ✅ Fully Hosted – The backend is deployed on Render, and the frontend is live at www.nubrief.co.
 ✅ Unsubscribe & Preferences – Users can manage subscriptions and change preferences anytime.
 
-🛠 Tech Stack
+**🛠 Tech Stack**
     •   Frontend: Next.js, React
     •   Backend: Node.js, Express.js, MongoDB (Atlas)
     •   AI Services: Google Gemini AI (for article summaries)
@@ -20,7 +20,7 @@ Instead of relying on human writers to summarize news, we built NuBrief, an enti
     •   Email Service: SendGrid API
     •   Hosting: Render
 
-🚀 Productivity Category: Why NuBrief is a Game-Changer
+**🚀 Productivity Category: Why NuBrief is a Game-Changer**
 
 NuBrief isn’t just a news aggregator—it’s a productivity tool designed for busy professionals, students, and knowledge workers to get information they need to know fast. Here’s why it excels:
 
@@ -30,20 +30,20 @@ NuBrief isn’t just a news aggregator—it’s a productivity tool designed for
 ✅ Boosts Decision-Making – Stay ahead of the curve with actionable knowledge in seconds, not hours.
 ✅ Daily Wisdom & Trivia – Get an extra boost of critical thinking with Smalltalk-powered wisdom challenges at the end of each newsletter.
 
-🔹 Who is NuBrief for?
+**🔹 Who is NuBrief for?**
 📌 Entrepreneurs & Executives – Quick access to essential news for informed decisions.
 📌 Students & Researchers – AI-summarized academic news and business insights.
 📌 Tech Professionals – Stay updated on AI, programming, and emerging technologies.
 📌 Investors & Analysts – Get financial and stock market news without information overload.
 📌 Anyone Who Values Their Time – Reduce distractions and consume news efficiently.
 
-🔹 Gemini AI Usage / Generative AI Beginner Category
+**🔹 Gemini AI Usage / Generative AI Beginner Category**
 
 NuBrief integrates Google Gemini AI to generate concise news summaries.
 ✅ When a user receives a newsletter, Gemini AI summarizes articles dynamically.
 ✅ This is implemented in the emailService.js file, under summarizeArticle().
 
-🧠 Smalltalk Integration
+**🧠 Smalltalk Integration**
 
 We use Smalltalk to generate daily wisdom quotes and trivia challenges.
 ✅ The Wisdom Generator is written in Smalltalk (wisdomGenerator.st).
