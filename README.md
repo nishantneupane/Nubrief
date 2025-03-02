@@ -46,7 +46,7 @@ NuBrief integrates Google Gemini AI to generate concise news summaries.
 **🧠 Smalltalk Integration**  
 
 We use Smalltalk to generate daily wisdom quotes and trivia challenges.  
-✅ The Wisdom Generator is written in Smalltalk (wisdomGenerator.st).  
+✅ The Wisdom Generator is written in Smalltalk (/newsletter-backend/services/wisdomGenerator.st).  
 ✅ It runs in the backend and inserts a daily quote & trivia into each email.  
 ✅ Users get to see the answer to the trivia at the bottom of the email.  
 
