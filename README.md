@@ -1,4 +1,4 @@
-NuBrief - Personalized AI-Driven News Digest
+**NuBrief - Personalized AI-Driven News Digest**
 
 Instead of relying on human writers to summarize news, we built NuBrief, an entirely AI-driven newsletter that curates and delivers personalized news straight to your inbox. Using Google Gemini AI, it autonomously summarizes top stories, ensuring you get the most important updates without the clutter. Whether you prefer daily or weekly digests, NuBrief keeps you informed—effortlessly.
 
