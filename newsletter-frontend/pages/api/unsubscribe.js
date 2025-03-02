@@ -4,7 +4,7 @@ export default async function handler(req, res) {
     }
 
     try {
-        const response = await fetch("http://www.nubrief.co/api/unsubscribe", {
+        const response = await fetch("https://newsletter-backend-sg7g.onrender.com/api/unsubscribe", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(req.body),
