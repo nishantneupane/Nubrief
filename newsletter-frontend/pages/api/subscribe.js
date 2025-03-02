@@ -10,7 +10,16 @@ export default async function handler(req, res) {
             body: JSON.stringify(req.body),
         });
 
-        const data = await response.json();
+        let data;
+        try {
+            // Attempt to parse JSON if the response is not empty
+            const text = await response.text();
+            console.log(text)
+            data = text ? JSON.parse(text) : {};
+        } catch (error) {
+            console.error("Error parsing JSON:", error);
+            data = {};
+        }
         return res.status(response.status).json(data);
     } catch (error) {
         console.error("Error subscribing user:", error);
