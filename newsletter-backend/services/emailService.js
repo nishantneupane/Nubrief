@@ -68,7 +68,6 @@ async function sendNewsletter(email) {
     
         <!-- ✅ NuBrief Branding -->
         <div style="text-align: center; padding-bottom: 15px;">
-        <img src="https://yourdomain.com/logo.png" alt="NuBrief Logo" style="max-width: 120px;">
         <h1 style="color: #007bff; font-size: 24px; margin: 5px 0;">NuBrief - Your Personalized News Digest</h1>
         <p style="color: #555; font-size: 16px;">Stay informed with curated news from your favorite categories.</p>
      </div>
